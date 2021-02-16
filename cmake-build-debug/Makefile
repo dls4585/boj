@@ -60,17 +60,6 @@ CMAKE_BINARY_DIR = C:\Users\PC\Desktop\boj\boj\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	echo >nul && "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache\fast: edit_cache
-
-.PHONY : edit_cache\fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -81,6 +70,17 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache\fast: edit_cache
+
+.PHONY : edit_cache\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,32 @@ boj\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2217.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\2217.dir\build
 .PHONY : 2217\fast
 
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test
+.PHONY : test
+
+# fast build rule for target.
+test\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\build
+.PHONY : test\fast
+
+#=============================================================================
+# Target rules for targets named 1946
+
+# Build rule for target.
+1946: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) 1946
+.PHONY : 1946
+
+# fast build rule for target.
+1946\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1946.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1946.dir\build
+.PHONY : 1946\fast
+
 source_code\11399.obj: source_code\11399.cpp.obj
 
 .PHONY : source_code\11399.obj
@@ -223,6 +249,33 @@ source_code\1931.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1931.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1931.dir\source_code\1931.cpp.s
 .PHONY : source_code\1931.cpp.s
 
+source_code\1946.obj: source_code\1946.cpp.obj
+
+.PHONY : source_code\1946.obj
+
+# target to build an object file
+source_code\1946.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1946.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1946.dir\source_code\1946.cpp.obj
+.PHONY : source_code\1946.cpp.obj
+
+source_code\1946.i: source_code\1946.cpp.i
+
+.PHONY : source_code\1946.i
+
+# target to preprocess a source file
+source_code\1946.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1946.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1946.dir\source_code\1946.cpp.i
+.PHONY : source_code\1946.cpp.i
+
+source_code\1946.s: source_code\1946.cpp.s
+
+.PHONY : source_code\1946.s
+
+# target to generate assembly for a file
+source_code\1946.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\1946.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1946.dir\source_code\1946.cpp.s
+.PHONY : source_code\1946.cpp.s
+
 source_code\2217.obj: source_code\2217.cpp.obj
 
 .PHONY : source_code\2217.obj
@@ -250,6 +303,33 @@ source_code\2217.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2217.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\2217.dir\source_code\2217.cpp.s
 .PHONY : source_code\2217.cpp.s
 
+source_code\test.obj: source_code\test.cpp.obj
+
+.PHONY : source_code\test.obj
+
+# target to build an object file
+source_code\test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\source_code\test.cpp.obj
+.PHONY : source_code\test.cpp.obj
+
+source_code\test.i: source_code\test.cpp.i
+
+.PHONY : source_code\test.i
+
+# target to preprocess a source file
+source_code\test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\source_code\test.cpp.i
+.PHONY : source_code\test.cpp.i
+
+source_code\test.s: source_code\test.cpp.s
+
+.PHONY : source_code\test.s
+
+# target to generate assembly for a file
+source_code\test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\source_code\test.cpp.s
+.PHONY : source_code\test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -260,17 +340,25 @@ help:
 	@echo ... rebuild_cache
 	@echo ... 11399
 	@echo ... 1931
+	@echo ... 1946
 	@echo ... 2217
 	@echo ... boj
+	@echo ... test
 	@echo ... source_code/11399.obj
 	@echo ... source_code/11399.i
 	@echo ... source_code/11399.s
 	@echo ... source_code/1931.obj
 	@echo ... source_code/1931.i
 	@echo ... source_code/1931.s
+	@echo ... source_code/1946.obj
+	@echo ... source_code/1946.i
+	@echo ... source_code/1946.s
 	@echo ... source_code/2217.obj
 	@echo ... source_code/2217.i
 	@echo ... source_code/2217.s
+	@echo ... source_code/test.obj
+	@echo ... source_code/test.i
+	@echo ... source_code/test.s
 .PHONY : help
 
 
