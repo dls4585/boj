@@ -60,6 +60,7 @@ CMAKE_BINARY_DIR = C:\Users\PC\Desktop\boj\boj\cmake-build-debug
 all: CMakeFiles\boj.dir\all
 all: CMakeFiles\1931.dir\all
 all: CMakeFiles\11399.dir\all
+all: CMakeFiles\2217.dir\all
 
 .PHONY : all
 
@@ -72,6 +73,7 @@ preinstall:
 clean: CMakeFiles\boj.dir\clean
 clean: CMakeFiles\1931.dir\clean
 clean: CMakeFiles\11399.dir\clean
+clean: CMakeFiles\2217.dir\clean
 
 .PHONY : clean
 
@@ -82,7 +84,7 @@ clean: CMakeFiles\11399.dir\clean
 CMakeFiles\boj.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\boj.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\boj.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\boj.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\boj.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target boj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target boj"
 .PHONY : CMakeFiles\boj.dir\all
 
 # Build rule for subdir invocation for target.
@@ -155,6 +157,33 @@ CMakeFiles\11399.dir\rule: cmake_check_build_system
 CMakeFiles\11399.dir\clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\11399.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\11399.dir\clean
 .PHONY : CMakeFiles\11399.dir\clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/2217.dir
+
+# All Build rule for target.
+CMakeFiles\2217.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2217.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\2217.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2217.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\2217.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target 2217"
+.PHONY : CMakeFiles\2217.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\2217.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\2217.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\2217.dir\rule
+
+# Convenience name for target.
+2217: CMakeFiles\2217.dir\rule
+
+.PHONY : 2217
+
+# clean rule for target.
+CMakeFiles\2217.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2217.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\2217.dir\clean
+.PHONY : CMakeFiles\2217.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

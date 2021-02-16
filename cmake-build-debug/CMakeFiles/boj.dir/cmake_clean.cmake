@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/boj.dir/11399.cpp.obj"
+  "CMakeFiles/boj.dir/source_code/11399.cpp.obj"
   "boj.exe"
   "boj.exe.manifest"
   "boj.lib"

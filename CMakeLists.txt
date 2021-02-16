@@ -3,6 +3,7 @@ project(boj)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(boj 11399.cpp)
-add_executable(1931 1931.cpp)
-add_executable(11399 11399.cpp)
+add_executable(boj "source_code/11399.cpp")
+add_executable(1931 "source_code/1931.cpp")
+add_executable(11399 "source_code/11399.cpp")
+add_executable(2217 "source_code/2217.cpp")

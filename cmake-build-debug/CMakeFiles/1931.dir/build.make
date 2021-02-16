@@ -61,33 +61,33 @@ include CMakeFiles\1931.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\1931.dir\flags.make
 
-CMakeFiles\1931.dir\1931.cpp.obj: CMakeFiles\1931.dir\flags.make
-CMakeFiles\1931.dir\1931.cpp.obj: ..\1931.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/1931.dir/1931.cpp.obj"
+CMakeFiles\1931.dir\source_code\1931.cpp.obj: CMakeFiles\1931.dir\flags.make
+CMakeFiles\1931.dir\source_code\1931.cpp.obj: ..\source_code\1931.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/1931.dir/source_code/1931.cpp.obj"
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\1931.dir\1931.cpp.obj /FdCMakeFiles\1931.dir\ /FS -c C:\Users\PC\Desktop\boj\boj\1931.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\1931.dir\source_code\1931.cpp.obj /FdCMakeFiles\1931.dir\ /FS -c C:\Users\PC\Desktop\boj\boj\source_code\1931.cpp
 <<
 
-CMakeFiles\1931.dir\1931.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/1931.dir/1931.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\1931.dir\1931.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\PC\Desktop\boj\boj\1931.cpp
+CMakeFiles\1931.dir\source_code\1931.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/1931.dir/source_code/1931.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\1931.dir\source_code\1931.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\PC\Desktop\boj\boj\source_code\1931.cpp
 <<
 
-CMakeFiles\1931.dir\1931.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/1931.dir/1931.cpp.s"
+CMakeFiles\1931.dir\source_code\1931.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/1931.dir/source_code/1931.cpp.s"
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\1931.dir\1931.cpp.s /c C:\Users\PC\Desktop\boj\boj\1931.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\1931.dir\source_code\1931.cpp.s /c C:\Users\PC\Desktop\boj\boj\source_code\1931.cpp
 <<
 
 # Object files for target 1931
 1931_OBJECTS = \
-"CMakeFiles\1931.dir\1931.cpp.obj"
+"CMakeFiles\1931.dir\source_code\1931.cpp.obj"
 
 # External object files for target 1931
 1931_EXTERNAL_OBJECTS =
 
-1931.exe: CMakeFiles\1931.dir\1931.cpp.obj
+1931.exe: CMakeFiles\1931.dir\source_code\1931.cpp.obj
 1931.exe: CMakeFiles\1931.dir\build.make
 1931.exe: CMakeFiles\1931.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 1931.exe"

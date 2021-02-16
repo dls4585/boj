@@ -155,6 +155,52 @@
 					<DistClean command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="2217">
+				<Option output="C:/Users/PC/Desktop/boj/boj/cmake-build-debug/2217.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/PC/Desktop/boj/boj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 2217"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2217/fast">
+				<Option output="C:/Users/PC/Desktop/boj/boj/cmake-build-debug/2217.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/PC/Desktop/boj/boj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 2217/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\PC\Desktop\boj\boj\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/PC/Desktop/boj/boj/cmake-build-debug"/>
 				<Option type="4"/>
@@ -176,12 +222,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/PC/Desktop/boj/boj/11399.cpp">
+		<Unit filename="C:/Users/PC/Desktop/boj/boj/source_code/11399.cpp">
 			<Option target="boj"/>
 			<Option target="11399"/>
 		</Unit>
-		<Unit filename="C:/Users/PC/Desktop/boj/boj/1931.cpp">
+		<Unit filename="C:/Users/PC/Desktop/boj/boj/source_code/1931.cpp">
 			<Option target="1931"/>
+		</Unit>
+		<Unit filename="C:/Users/PC/Desktop/boj/boj/source_code/2217.cpp">
+			<Option target="2217"/>
 		</Unit>
 		<Unit filename="C:/Users/PC/Desktop/boj/boj/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
