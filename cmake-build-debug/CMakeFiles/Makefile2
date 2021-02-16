@@ -59,6 +59,7 @@ CMAKE_BINARY_DIR = C:\Users\PC\Desktop\boj\boj\cmake-build-debug
 # The main recursive "all" target.
 all: CMakeFiles\boj.dir\all
 all: CMakeFiles\1931.dir\all
+all: CMakeFiles\11399.dir\all
 
 .PHONY : all
 
@@ -70,6 +71,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles\boj.dir\clean
 clean: CMakeFiles\1931.dir\clean
+clean: CMakeFiles\11399.dir\clean
 
 .PHONY : clean
 
@@ -80,7 +82,7 @@ clean: CMakeFiles\1931.dir\clean
 CMakeFiles\boj.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\boj.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\boj.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\boj.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\boj.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target boj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target boj"
 .PHONY : CMakeFiles\boj.dir\all
 
 # Build rule for subdir invocation for target.
@@ -107,7 +109,7 @@ CMakeFiles\boj.dir\clean:
 CMakeFiles\1931.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1931.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1931.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1931.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1931.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target 1931"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target 1931"
 .PHONY : CMakeFiles\1931.dir\all
 
 # Build rule for subdir invocation for target.
@@ -126,6 +128,33 @@ CMakeFiles\1931.dir\rule: cmake_check_build_system
 CMakeFiles\1931.dir\clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1931.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1931.dir\clean
 .PHONY : CMakeFiles\1931.dir\clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/11399.dir
+
+# All Build rule for target.
+CMakeFiles\11399.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\11399.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\11399.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\11399.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\11399.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target 11399"
+.PHONY : CMakeFiles\11399.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\11399.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\11399.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\11399.dir\rule
+
+# Convenience name for target.
+11399: CMakeFiles\11399.dir\rule
+
+.PHONY : 11399
+
+# clean rule for target.
+CMakeFiles\11399.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\11399.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\11399.dir\clean
+.PHONY : CMakeFiles\11399.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -61,33 +61,33 @@ include CMakeFiles\boj.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\boj.dir\flags.make
 
-CMakeFiles\boj.dir\test.cpp.obj: CMakeFiles\boj.dir\flags.make
-CMakeFiles\boj.dir\test.cpp.obj: ..\test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/boj.dir/test.cpp.obj"
+CMakeFiles\boj.dir\11399.cpp.obj: CMakeFiles\boj.dir\flags.make
+CMakeFiles\boj.dir\11399.cpp.obj: ..\11399.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/boj.dir/11399.cpp.obj"
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\boj.dir\test.cpp.obj /FdCMakeFiles\boj.dir\ /FS -c C:\Users\PC\Desktop\boj\boj\test.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\boj.dir\11399.cpp.obj /FdCMakeFiles\boj.dir\ /FS -c C:\Users\PC\Desktop\boj\boj\11399.cpp
 <<
 
-CMakeFiles\boj.dir\test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boj.dir/test.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\boj.dir\test.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\PC\Desktop\boj\boj\test.cpp
+CMakeFiles\boj.dir\11399.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boj.dir/11399.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\boj.dir\11399.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\PC\Desktop\boj\boj\11399.cpp
 <<
 
-CMakeFiles\boj.dir\test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boj.dir/test.cpp.s"
+CMakeFiles\boj.dir\11399.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boj.dir/11399.cpp.s"
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\boj.dir\test.cpp.s /c C:\Users\PC\Desktop\boj\boj\test.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\boj.dir\11399.cpp.s /c C:\Users\PC\Desktop\boj\boj\11399.cpp
 <<
 
 # Object files for target boj
 boj_OBJECTS = \
-"CMakeFiles\boj.dir\test.cpp.obj"
+"CMakeFiles\boj.dir\11399.cpp.obj"
 
 # External object files for target boj
 boj_EXTERNAL_OBJECTS =
 
-boj.exe: CMakeFiles\boj.dir\test.cpp.obj
+boj.exe: CMakeFiles\boj.dir\11399.cpp.obj
 boj.exe: CMakeFiles\boj.dir\build.make
 boj.exe: CMakeFiles\boj.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable boj.exe"
