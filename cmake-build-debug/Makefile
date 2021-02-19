@@ -52,24 +52,13 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\PC\Desktop\boj\boj
+CMAKE_SOURCE_DIR = C:\Users\dls45\Desktop\boj\boj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\PC\Desktop\boj\boj\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dls45\Desktop\boj\boj\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	echo >nul && "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache\fast: rebuild_cache
-
-.PHONY : rebuild_cache\fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -82,11 +71,22 @@ edit_cache\fast: edit_cache
 
 .PHONY : edit_cache\fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache\fast: rebuild_cache
+
+.PHONY : rebuild_cache\fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dls45\Desktop\boj\boj\cmake-build-debug\CMakeFiles C:\Users\dls45\Desktop\boj\boj\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dls45\Desktop\boj\boj\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,19 @@ boj\fast:
 .PHONY : boj\fast
 
 #=============================================================================
+# Target rules for targets named 9012
+
+# Build rule for target.
+9012: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) 9012
+.PHONY : 9012
+
+# fast build rule for target.
+9012\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\9012.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\9012.dir\build
+.PHONY : 9012\fast
+
+#=============================================================================
 # Target rules for targets named 1931
 
 # Build rule for target.
@@ -167,19 +180,6 @@ boj\fast:
 .PHONY : 2217\fast
 
 #=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test
-.PHONY : test
-
-# fast build rule for target.
-test\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\build
-.PHONY : test\fast
-
-#=============================================================================
 # Target rules for targets named 1946
 
 # Build rule for target.
@@ -191,6 +191,19 @@ test\fast:
 1946\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\1946.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\1946.dir\build
 .PHONY : 1946\fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test
+.PHONY : test
+
+# fast build rule for target.
+test\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\build
+.PHONY : test\fast
 
 source_code\11399.obj: source_code\11399.cpp.obj
 
@@ -303,6 +316,33 @@ source_code\2217.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2217.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\2217.dir\source_code\2217.cpp.s
 .PHONY : source_code\2217.cpp.s
 
+source_code\9012.obj: source_code\9012.cpp.obj
+
+.PHONY : source_code\9012.obj
+
+# target to build an object file
+source_code\9012.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\9012.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\9012.dir\source_code\9012.cpp.obj
+.PHONY : source_code\9012.cpp.obj
+
+source_code\9012.i: source_code\9012.cpp.i
+
+.PHONY : source_code\9012.i
+
+# target to preprocess a source file
+source_code\9012.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\9012.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\9012.dir\source_code\9012.cpp.i
+.PHONY : source_code\9012.cpp.i
+
+source_code\9012.s: source_code\9012.cpp.s
+
+.PHONY : source_code\9012.s
+
+# target to generate assembly for a file
+source_code\9012.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\9012.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\9012.dir\source_code\9012.cpp.s
+.PHONY : source_code\9012.cpp.s
+
 source_code\test.obj: source_code\test.cpp.obj
 
 .PHONY : source_code\test.obj
@@ -342,6 +382,7 @@ help:
 	@echo ... 1931
 	@echo ... 1946
 	@echo ... 2217
+	@echo ... 9012
 	@echo ... boj
 	@echo ... test
 	@echo ... source_code/11399.obj
@@ -356,6 +397,9 @@ help:
 	@echo ... source_code/2217.obj
 	@echo ... source_code/2217.i
 	@echo ... source_code/2217.s
+	@echo ... source_code/9012.obj
+	@echo ... source_code/9012.i
+	@echo ... source_code/9012.s
 	@echo ... source_code/test.obj
 	@echo ... source_code/test.i
 	@echo ... source_code/test.s
