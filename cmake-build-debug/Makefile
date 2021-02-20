@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dls45\Desktop\boj\boj
+CMAKE_SOURCE_DIR = C:\Users\PC\Desktop\boj\boj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dls45\Desktop\boj\boj\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\PC\Desktop\boj\boj\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,9 +84,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dls45\Desktop\boj\boj\cmake-build-debug\CMakeFiles C:\Users\dls45\Desktop\boj\boj\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dls45\Desktop\boj\boj\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\Desktop\boj\boj\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -180,6 +180,19 @@ boj\fast:
 .PHONY : 2217\fast
 
 #=============================================================================
+# Target rules for targets named 11000
+
+# Build rule for target.
+11000: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) 11000
+.PHONY : 11000
+
+# fast build rule for target.
+11000\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\11000.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\11000.dir\build
+.PHONY : 11000\fast
+
+#=============================================================================
 # Target rules for targets named 1946
 
 # Build rule for target.
@@ -204,6 +217,33 @@ test: cmake_check_build_system
 test\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\build
 .PHONY : test\fast
+
+source_code\11000.obj: source_code\11000.cpp.obj
+
+.PHONY : source_code\11000.obj
+
+# target to build an object file
+source_code\11000.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\11000.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\11000.dir\source_code\11000.cpp.obj
+.PHONY : source_code\11000.cpp.obj
+
+source_code\11000.i: source_code\11000.cpp.i
+
+.PHONY : source_code\11000.i
+
+# target to preprocess a source file
+source_code\11000.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\11000.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\11000.dir\source_code\11000.cpp.i
+.PHONY : source_code\11000.cpp.i
+
+source_code\11000.s: source_code\11000.cpp.s
+
+.PHONY : source_code\11000.s
+
+# target to generate assembly for a file
+source_code\11000.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\11000.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\11000.dir\source_code\11000.cpp.s
+.PHONY : source_code\11000.cpp.s
 
 source_code\11399.obj: source_code\11399.cpp.obj
 
@@ -378,6 +418,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... 11000
 	@echo ... 11399
 	@echo ... 1931
 	@echo ... 1946
@@ -385,6 +426,9 @@ help:
 	@echo ... 9012
 	@echo ... boj
 	@echo ... test
+	@echo ... source_code/11000.obj
+	@echo ... source_code/11000.i
+	@echo ... source_code/11000.s
 	@echo ... source_code/11399.obj
 	@echo ... source_code/11399.i
 	@echo ... source_code/11399.s
